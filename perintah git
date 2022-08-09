@@ -1,0 +1,39 @@
+A. MEMBUAT GIT BARU
+  -git init
+  -git add README.md
+  -git commit -m "first commit"
+
+  #memilih brance jika tidak di eksekusi maka akan ke brance master
+  -git branch -M main
+
+  #menambahkan remote pada git
+  -git remote add origin https://github.com/centra-farm-com/catatan.git
+  -git push -u origin main
+
+B. MENGGANTI REMOTE REPOSITORI
+  #mengecek remote
+  -git remote -v
+  
+  -git remote set-url <nama-remote> <url-remote> 
+  #atau
+  -git remote set-url origin git@gitserver.com:user/repo_name.git
+  
+  #tambahkan set-url untuk mengganti remote
+  
+  #setelah mengganti remote cek lagi dengan 
+  -git remote -v
+  
+  #bisa check di tutorial
+  https://www.linuxid.net/31933/cara-mudah-mengganti-url-git-remote/
+  
+ C. MEMBUAT BRANCE BARU
+  #check tutorial
+  https://www.petanikode.com/git-branch/
+  
+  langkah pertama buatlah brance lewat vscode atau github, atau menggunakan perintah
+  1. masuk ke brance master, lalu git pull agar semua kode terbaru dan menghindari konflik
+  2.lalu buat brance dengan perintah git brance development
+  3.telah membuat brance git push ke git agar terbuat brance baru
+  4. untuk pindah brance silahkan gunakan git checkout <nama-brance>  contoh git checkout master , maka posisi anda sudah di brance master, 
+     untuk kembali ke brance development silahkan gunakan perintah, git checkout develoment, maka posisi anda sudah di brance development
+  5. berhati hati saat menggunakan brance agar tidak terjadi konflik
